@@ -1,0 +1,38 @@
+type User {
+  firstName: String
+  lastName: String
+  email: String
+  password: String
+}
+
+input userInput {
+  firstName: String
+  lastName: String
+  email: String
+  password: String
+}
+
+input userWhereInput {
+  id: ID!
+}
+
+input loginInput {
+  email: String
+  password: String
+}
+
+type Token {
+  token: String!
+}
+
+type Query {
+  findAllUser: [User!]
+}
+
+type Mutation {
+  createUser(input: userInput): User
+  updateUser(input: userInput, where: userWhereInput!): User
+  deleteAllUsers: User!
+  deleteUserById(id: Int!): User!
+  loginUser(input: loginInput!): Token
+}

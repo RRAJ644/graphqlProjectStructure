@@ -1,0 +1,42 @@
+{
+  "name": "boilerplates",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon --exec babel-node src/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@apollo/server": "^4.4.1",
+    "@graphql-tools/load-files": "^6.6.1",
+    "@graphql-tools/merge": "^8.4.0",
+    "apollo-server-errors": "^3.3.1",
+    "apollo-server-express": "^3.12.0",
+    "bcryptjs": "^2.4.3",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "graphql": "^16.6.0",
+    "graphql-middleware": "^6.1.33",
+    "graphql-scalars": "^1.20.1",
+    "graphql-shield": "^7.6.5",
+    "graphql-subscriptions": "^2.0.0",
+    "graphql-tools": "^8.3.19",
+    "graphql-ws": "^5.12.0",
+    "http": "^0.0.1-security",
+    "jsonwebtoken": "^9.0.0",
+    "nodemon": "^2.0.21",
+    "pg": "^8.10.0",
+    "sequelize": "^6.29.1",
+    "url": "^0.11.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.21.0",
+    "@babel/core": "^7.21.0",
+    "@babel/node": "^7.20.7",
+    "@babel/preset-env": "^7.20.2"
+  }
+}
